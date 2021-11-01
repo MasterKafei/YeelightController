@@ -77,15 +77,15 @@ A scenario is configured as follows:
 
 `instructions` is a list of instructions which will be executed in the order of definition. An instruction is defined as follows:
 
-`ligths` (` string` | `array`) is the only required key. Indicates which light the instruction will be applied. You can use the names of the lights you configured as a value or the constant `all` to apply the instruction to all configured lights.
+`ligths` (`string` | `array`) is the only required key. Indicates which light the instruction will be applied. You can use the names of the lights you configured as a value or the constant `all` to apply the instruction to all configured lights.
 
-`power` (` string`) indicates the state of the light (on, off). Possible values are `on`, `off`, and `toggle`.
+`power` (`string`) indicates the state of the light (on, off). Possible values are `on`, `off`, and `toggle`.
 
-`color` (` int`) indicates the color in hex that will be applied to the light. You can enter a hex value. Possible values: 1 - 16777215 (0x000001 - 0xFFFFFF).
+`color` (`int`) indicates the color in hex that will be applied to the light. You can enter a hex value. Possible values: 1 - 16777215 (0x000001 - 0xFFFFFF).
 
 `hue` (`int`) indicates the hue of the light from 0 to 359.
 
-`bright` (` int`) indicates the percentage of brightness of the light from 1 to 100.
+`bright` (`int`) indicates the percentage of brightness of the light from 1 to 100.
 
 `temperature` (`int` | `array`) indicates the color temperature. Two types of value possible. Either you indicate a number it will correspond to the color temperature. Consider an array of three values which will allow you to add the effect (`smooth` |` sudden`) and the transition duration (minimum to 30). To summarize the table, the first value corresponds to the temperature, the second the effect, and the third the duration.
 
