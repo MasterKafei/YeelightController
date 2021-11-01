@@ -1,0 +1,66 @@
+parameters:
+    yeelights:
+        kitchen:
+            name: Cuisine
+            ip: 192.168.1.23
+        kitchen2:
+            name: Cuisine2
+            ip: 192.168.1.22
+        bathroom:
+            name: Salle de bain
+            ip: 192.168.1.18
+        corridor:
+            name: Couloir
+            ip: 192.168.1.21
+        bedroom:
+            name: Chambre
+            ip: 192.168.1.12
+        sittingRoom:
+            name: Salon
+            ip: 192.168.1.11
+        locker:
+            name: Placard
+            ip: 192.168.1.25
+    scenarios:
+        all_turn_off:
+            name: TurnAllOff
+            instructions:
+                -
+                    lights: all
+                    power: off
+
+        all_turn_on:
+            name: TurnAllOn
+            instructions:
+                -
+                    lights: all
+                    power: on
+        toggle_all:
+            name: ToggleAll
+            instructions:
+                -
+                    lights: all
+                    power: toggle
+        all_white:
+            name: AllWhite
+            instructions:
+                -
+                    lights: all
+                    power: on
+                    color: 0xFFFFFF
+                    hue: 359
+                    bright: 100
+                    temperature:
+                        - 6500
+        toggle_living_room:
+            name: ToggleLivingRoom
+            instructions:
+                -
+                    lights: Salon
+                    power: toggle
+        toogle_kitchen:
+            name: ToggleKitchen
+            instructions:
+                -
+                    lights: [Cuisine, Cuisine2]
+                    power: toggle
